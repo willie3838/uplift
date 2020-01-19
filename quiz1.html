@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Linking external css file -->
+    <link rel="stylesheet" href="css/quiz1style.css">
+    <script src="js/backend.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navagation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="logo" width="80">
+        </a>
+    </nav>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="InputFirstName"><font size="5">Personal Information</font></label>
+                        <input type="firstname" class="form-control" id="InputFirstName" placeholder="First Name*">
+                    </div>
+                     <div class="form-group">
+                        <label for="InputLastName"></label>
+                        <input type="lastname" class="form-control" id="InputLastName" placeholder="Last Name*">
+                     </div>
+                     <div class="form-group">
+                        <label for="InputAge"></label>
+                        <input type="age" class="form-control" id="InputAge" placeholder="Age*">
+                     </div>
+                    <div class="form-group">
+                        <label for="InputSleep"><font size="5">Daily Health Information</font></label>
+                        <input type="sleep" class="form-control" id="InputSleep" placeholder="How many hours did you sleep?*">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputMeal"></label>
+                        <input type="meals" class="form-control" id="InputMeal" placeholder="How many meals have you eaten?*">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputExercise"></label>
+                        <input type="exercise" class="form-control" id="InputExercise" placeholder="How many minutes of exercise have you done?*">
+                    </div>
+                    <a onclick = collectData(); type="button" class="btn btn-primary" href = "quiz2.html">Submit</a>
+                </form>  
+            </div>
+        </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
