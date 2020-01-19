@@ -115,11 +115,13 @@ function loadGraphs()
 
         if (sleep > sleep_median)
         {
-            document.getElementById("sleep-text").innerHTML = "You are making your best efforts to go above and beyond to get the expected amount of sleep needed for a human being."
+            var x = (sleep - sleep_median).toString();
+            document.getElementById("sleep-text").innerHTML = "You are making your best efforts to go above and beyond to get the expected amount of sleep, exceeding by "+ x + " hours.";
         }
         else if (sleep < sleep_median)
         {
-            document.getElementById("sleep-text").innerHTML = "You are suggested to get to bed slightly earlier to reach the average amount of sleep needed to function.";
+            var x = (sleep_median - sleep).toString();
+            document.getElementById("sleep-text").innerHTML = "You are suggested to get to bed slightly earlier to reach the average amount of " + x + " hour(s) of sleep needed to function.";
         }
         else
         {
@@ -140,7 +142,7 @@ function loadGraphs()
         else if (sleep < sleep_median)
         {
             var x = (sleep_median - sleep).toString();
-            document.getElementById("sleep-text").innerHTML = "You are suggested to get to bed slightly earlier to reach the average amount of " + x + "sleep needed to function.";
+            document.getElementById("sleep-text").innerHTML = "You are suggested to get to bed slightly earlier to reach the average amount of " + x + " hour(s) of sleep needed to function.";
         }
         else
         {
