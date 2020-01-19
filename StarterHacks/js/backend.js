@@ -85,7 +85,7 @@ function circleFilling(circle)
 
 function loadMood()
 {
-   document.getElementsByTagName("h1")[0].innerHTML = sessionStorage.getItem("firstname") +"'s " + "summary";
+   document.getElementsByTagName("h1")[0].innerHTML = sessionStorage.getItem("firstname") +"'s " + "Summary";
    if(parseInt(sessionStorage.getItem("sentiment_value")) >= 16)
    {
     document.getElementById("mood-graphic").src = "img/sun-positive.svg";  
