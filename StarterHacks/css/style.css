@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Work Sans', sans-serif;
+;
+}
+
+section{
+    height: 600px;
+}
+
+#quiz-button{
+    display: inline-block;
+    background-color: #17DDB7;
+    border-radius: 15px;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#home{
+    margin-top: 8vh;
+    background-color: white;
+    text-align: center;
+    height: 720px;
+}
+
+.contact{
+    margin-top: 8vh;
+    background-color: white;
+    text-align: center;
+    padding-right: 50px;
+    
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: solid black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.neutral{
+    transition: color;
+}
+
+.disagree {
+    border: solid red;
+}
+
+.agree {
+    border: solid green;
+    transition: color;
+}
+
+.agree:hover{
+    background-color: green;
+}
+
+.disagree:hover{
+    background-color: red;
+}
+
+.neutral:hover{
+    background-color: black;
+}
+#about{
+    background-color: whitesmoke;
+}
+
+.navbar-brand {
+    font-family: 'Work Sans:', sans-serif, 500;
+    text-align: center;
+    font-size: larger;
+    padding: 0px;
+    text-size-adjust: 45px;
+    text-shadow: black;
+    padding-right: 30px;
+
+}
+
+.grouppic {
+    width: 100%;
+    align-content: center;
+}
+
+.maintitle {
+    display: inline-block;
+    margin-top:100px;
+    font-family: 'Work Sans', sans-serif;
+    text-size-adjust: 300pt;
+    text-shadow: black;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.subheading {
+    font-family: 'Work Sans', sans-serif;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-weight: 400;
+}
+
+#about {
+    margin-top: 75px;
+    padding-top: 25px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    height: 1200px;
+}
+.mission{
+    margin-top: 100px;
+    padding-top: 200px;
+    font-weight: 600;
+}
+
+.mission-statement{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 25px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+.pillars{
+    margin-top: 50px;
+    padding-top: 50px;
+    font-weight: 700;
+
+}
+
+.sleepcard {
+    float: left;
+    margin-left: 90px;
+    
+    width: 25%;
+}
+
+.exercisecard {
+    float: left;
+    margin-top: 33px;
+    margin-left: 60px;
+    width: 25%;
+}
+
+.dietcard {
+    float: left;
+    margin-top: 65px;
+    margin-left: 40px;
+    width: 25%;
+}
+
+.learn-more-button {
+    display: inline-block;
+    background-color: #17DDB7;
+    border-radius: 15px;
+    padding: 16px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+
+}
+
+#signup-button {
+    display: inline-block;
+    background-color: #17DDB7;
+    border-radius: 15px;
+    padding: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.nav-item {
+    padding-right: 30px;
+    font-size: 14pt;
+}
+
+.row{
+    padding: 40px;
+    background-color: #17DDB7;
+}
+

@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Apercu;
+}
+
+
+.form-group{
+    width:90%;
+    margin: 15px 15px;
+    padding: 3px;
+}
+
+.btn-primary{
+    margin: 20px 15px;
+    background-color: #17DDB7;
+    border: none;
+}
+
+.panel-default{
+    margin: 0 auto;
+    margin-top: 10%;
+    border: solid black;
+    width: 50%;
+}
+
+.navbar-brand {
+    font-family: 'Work Sans:', sans-serif, 500;
+    text-align: center;
+    font-size: larger;
+    padding: 0px;
+    text-size-adjust: 45px;
+    text-shadow: black;
+    padding-right: 30px;
+
+}
+

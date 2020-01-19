@@ -1,0 +1,174 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: avenir;
+  }
+  
+  .content {
+    height: 95vh;
+    width: 95%;
+    background:white;
+    margin: 2em auto;
+    margin-top: 0;
+    text-align: center;
+    padding: 4em 0;
+    
+  }
+  
+  .desc {
+      font-size: 0.9em;
+      padding: 2px;
+      padding-top: 5px;
+  }
+
+  #mood-text {
+      margin-top: 50%;
+  }
+  .navbar-brand {
+    font-family: 'Work Sans:', sans-serif, 500;
+    text-align: center;
+    font-size: larger;
+    padding: 0px;
+    text-size-adjust: 45px;
+    text-shadow: black;
+    padding-right: 30px;
+
+}
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    width: 23%;
+    position: relative;
+    height: 25em;
+    perspective: 150em;
+  
+    
+  }
+  .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25em;
+    backface-visibility: hidden;
+    transition: all .6s ease;
+    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+    
+  }
+  .card__side--front {
+    background-color: rgb(231, 231, 231);
+    border-radius: 25px;
+    padding: 5px; 
+  }
+  .card__side--back {
+    color: #FFF;
+    border-radius: 25px;
+    padding: 5px; 
+    transform: rotateY(180deg);
+  }
+  .card__side--back-1 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  }
+  .card__side--back-2 {
+    background-image: linear-gradient(to right bottom, rgb(180, 212, 241), rgb(116, 102, 236));
+  }
+  .card__side--back-3 {
+    background-image: linear-gradient(to right bottom, #fac6bd, #ff9986);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg);
+  }
+  .card:hover .card__side--back {
+    transform: rotate(0);
+  }
+  .card__description {
+    font-size: 2;
+    padding: 1em 0;
+    font-family: 'Lucida Sans'
+  }
+  .card__description svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #FFF;
+  }
+  .badge-sleep {
+    background-color: rgb(169, 173, 184);
+    color: white;
+  }
+  
+  #rcorners1 {
+    border-radius: 25px;
+    background: rgb(240, 243, 236);
+    padding: 20px; 
+    width: 95%;
+    height: 160px;
+  }
+  
+  
+  .aligncenter {
+      vertical-align: middle;
+  }
+  
+  /* gg */
+  
+  .sidebar {
+    /* for layout */
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+  
+    /* for styling */
+    padding: 1em;
+    text-align: center;
+    border-right: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+  }
+  
+  .main-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .badge-development {
+    background-color: #EC1B69;
+    color: white;
+  }
+  
+  .food-graphic{
+      margin-top: 3em;
+  }
+  .badge-design {
+    background-color: #3B56A5;
+    color: white;
+  }
+  
+  .badge-business {
+    background-color: #82C94B;
+    color: white;
+  }
+  
+  .fave-btn:hover {
+    color: #F1C91C;
+  }
+  
+  .sleep-graphic {
+    margin-top: 3em;
+  }
+  
+  canvas{
+      padding-right: 15px !important;
+  }
+
+  h1{
+      margin-top: 7%;
+      text-align: center;
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- chart.js-->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <link rel="stylesheet" href="css/resultsstyle.css">
+  <script src="js/backend.js"></script>
+
+</head>
+<body onload = "loadGraphs(); loadMood();">
+ <!-- Navagation bar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="logo" width="80">
+    </a>
+</nav>
+
+<h1>This is heading 1</h1>
+
+<section class="content">
+  <div class="cards">
+    <!-- CARD 1-->
+    <div class="card">
+      <div class="card__side card__side--front card__side--front-1">
+        <div class="card__description">
+          <img src="img/sleep-icon.svg"
+          class="sleep-graphic"
+          alt="Sleep Icon"
+          width=80%>
+        </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-2">
+        <div class="card__description">
+          <canvas id="sleepChart" width="10" height="10"></canvas>
+          <center><p class = "desc" id = "sleep-text"><font color="white"></font></p c></center>
+        </div>
+      </div>  
+    </div>
+    <!-- CARD 2-->
+    <div class="card">
+      <div class="card__side card__side--front card__side--front-1">
+        <div class="card__description">
+          <img src="img/exercise-icon.svg"
+          class="exercise-Graphic"
+          alt="Exercise Icon"
+          width=80%>
+        </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-1">
+        <div class="card__description">
+          <canvas id="exerciseChart" width="10" height="10"></canvas>
+          <center><p class = "desc" id = "exercise-text"><font color="white"></font></p></center>
+        </div>
+      </div>  
+    </div>
+    <!-- CARD 3-->
+    <div class="card">
+      <div class="card__side card__side--front card__side--front-1">
+        <div class="card__description">
+          <img src="img/food-icon.svg"
+          class="food-graphic"
+          alt="Food Icon"
+          width=80%>
+        </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-3">
+        <div class="card__description">
+          <canvas id="mealChart" width="10" height="10"></canvas>
+          <center><p class = "desc" id = "meal-text"><font color="white"></font></p></center>
+        </div>
+      </div>  
+    </div>
+    <!-- CARD 4-->
+    <div class="card">
+      <div class="card__side card__side--front card__side--front-1">
+        <div class="card__description">
+          <img src=""
+          id="mood-graphic"
+          alt="Mood Icon"
+          width=80%>
+        </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-2">
+        <div class="card__description">
+          <center><p class = "desc" id = "mood-text"><font color="black"></font></p c></center>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
